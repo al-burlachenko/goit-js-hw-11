@@ -35,6 +35,7 @@ const timer = {
 
       if (date.getTime() <= Date.now()) {
         Swal.fire('Таймер досчитал');
+        clearInterval(timerInterval);
       }
     }
   },
